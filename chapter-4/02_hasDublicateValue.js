@@ -12,3 +12,17 @@ function hasDublicateValue(array) {
 }
 
 console.log(hasDublicateValue([1, 5, 3, 9, 1, 4]));
+
+function hasDublicateValueLinerSearch(array) {
+    let existingNumbers = [];
+    for (let i = 0; i < array.length; i++) {
+        if (existingNumbers[array[i]] === 1) {
+            return true;
+        } else {
+            existingNumbers[array[i]] = 1;
+        }
+    }
+    return false;
+}
+
+console.log(hasDublicateValueLinerSearch([1, 5, 3, 9, 4]));
