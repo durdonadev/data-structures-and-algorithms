@@ -6,6 +6,7 @@ function intersection(firstArray, secondArray) {
         for (let j = 0; j < secondArray.length; j++) {
             if (firstArray[i] === secondArray[j]) {
                 result.push(firstArray[i]);
+                break;
             }
         }
     }
