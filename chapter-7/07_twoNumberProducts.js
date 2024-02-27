@@ -14,3 +14,20 @@ function twoNumbersProduct(array) {
 }
 
 console.log(twoNumbersProduct([1, 2, 3, 4, 5]));
+
+// Dealing with multiple Datasets (page 105)
+// Computing the product of every number from one array by every number of a second array
+// Input: [1,2,3], [10,100,1000]
+// Output: [10,100,1000,20,200,2000,30,300,3000]
+
+function twoNumbersProduct2(array1, array2) {
+    let products = [];
+    for (let i = 0; i < array1.length; i++) {
+        for (let j = 0; j < array2.length; j++) {
+            products.push(array1[i] * array2[j]);
+        }
+    }
+    return products;
+}
+
+console.log(twoNumbersProduct2([1, 2, 3], [10, 100, 1000]));
