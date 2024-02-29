@@ -1,4 +1,4 @@
-// The function finds the greatest product of three numbers from a given array
+// The function finds the greatest product of three numbers from a given array (page 111)
 
 function greatestProductOfThree(array) {
     let max = array[0] * array[1] * array[2];
